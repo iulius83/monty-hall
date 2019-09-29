@@ -17,6 +17,8 @@
 </head>
 
 <body ontouchmove="BlockMove(event);">
+    
+    <!-- main instructions block -->
     <div id="instructions">
         <h1>Monty Hall Problem</h1>
         <hr>
@@ -30,6 +32,8 @@
         <button id="start">Start Game</button>
         <span id="started">Game Started! Select a door:</span>
     </div>
+
+    <!-- doors block -->
     <div id="doors">
         <div class="door door1">
             <!-- <img src="images/1.png" alt=""> -->
@@ -41,6 +45,8 @@
             <!-- <img src="images/3.png" alt=""> -->
         </div>
     </div>
+
+    <!-- first modal, default = hidden -->
     <div id="modal">
         <div class="modal-wrapper">
             <h1>What will you do?</h1>
@@ -50,6 +56,8 @@
             <button id="ok-button">OK</button>
         </div>
     </div>
+
+    <!-- second "you win" modal, default = hidden -->
     <div id="you-won-modal">
         <div class="modal-wrapper">
             <i class="fas fa-thumbs-up fa-7x"></i>
