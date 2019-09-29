@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+    <meta name="viewport" content="user-scalable=no, width=device-width" />
+    <link rel="apple-touch-icon" href="apple-touch-icon.png" />
+    <link rel="icon" href="apple-touch-icon.png" type="image/png" />
+    <title>Monty Hall Problem</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ"
+        crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body ontouchmove="BlockMove(event);">
+    <div id="instructions">
+        <h1>Monty Hall Problem</h1>
+        <hr>
+        <p>You are given the choice of three doors. Behind one door is a car, behind the others, goats.</p>
+        <ol>
+            <li>You pick a door</li>
+            <li>Another door opens, which has a goat</li>
+            <li>You have the opportunity to change your choice</li>
+            <li>All doors open and you see what you have chosen.</li>
+        </ol>
+        <button id="start">Start Game</button>
+        <span id="started">Game Started! Select a door:</span>
+    </div>
+    <div id="doors">
+        <div class="door door1">
+            <!-- <img src="images/1.png" alt=""> -->
+        </div>
+        <div class="door door2">
+            <!-- <img src="images/2.png" alt=""> -->
+        </div>
+        <div class="door door3">
+            <!-- <img src="images/3.png" alt=""> -->
+        </div>
+    </div>
+    <div id="modal">
+        <div class="modal-wrapper">
+            <h1>What will you do?</h1>
+            <h4>Another door has opened showing a goat.</h4>
+            <h4>You have the possibility to change your option.</h4>
+            <h2>Click on your final door of choice!</h2>
+            <button id="ok-button">OK</button>
+        </div>
+    </div>
+    <div id="you-won-modal">
+        <div class="modal-wrapper">
+            <i class="fas fa-thumbs-up fa-7x"></i>
+            <h1>You Won !!!</h1>
+            <button id="won-ok-button">Awesome!</button>
+        </div>
+    </div>
+    <footer>
+        <div>© 2019:
+            <a href="http://juliusanghelina.ro" target="_blank">JuliusAnghelina.ro</a>
+        </div>
+    </footer>
+    <script src="script.js"></script>
+</body>
+
+</html>
